@@ -1,0 +1,40 @@
+.container{
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: light-dark( #eae9e9, var(--color-1-dark));
+  width: 90%;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+.project-content{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+}
+
+.list{
+  gap: 10px;
+  flex-wrap: wrap;
+}
+li{
+  background-color: light-dark( var(--color-3), var(--color-2));
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+@media screen  and ( min-width: 768px) {
+  .container{
+    width: 80%;
+    margin: auto;
+  }
+  .project-content{
+    flex: 1;
+  }
+  app-slider{
+    width: 50%;
+    align-items: center;
+    display: flex;
+  }
+}

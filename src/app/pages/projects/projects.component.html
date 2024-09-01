@@ -1,0 +1,24 @@
+<app-title-bar [title]="'Experiencia laboral'" [icon]="'fas fa-laptop-code'"/>
+<div class="project-container container d-flex flex-column">
+  <div class="card" *ngFor="let project of projects">
+    <div class="card-header">
+      {{ project.puesto }}
+    </div>
+    <div class="card-content">
+      <dl>
+        <div *ngFor="let activity of project.activity">
+          <dt>
+            <a [routerLink]="'/my-experience/'+activity.id" *ngIf="activity.router; else elseBlock">{{ activity.sistema }}</a>
+            <ng-template #elseBlock>{{ activity.sistema }}</ng-template>
+          </dt>
+          <dd>
+            {{ activity.description }}
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+  <div class="more">
+    <span class="btn">Haz click para ver más de mí: <a class="pulse" href="https://github.com/RolandoGL">RolandoGL</a></span>
+  </div>
+</div>

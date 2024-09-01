@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'my-cv';
+  public isOpen: boolean = false
+
+  public onOpenSideBar( value: boolean ):void{
+    this.isOpen = value
+  }
 }

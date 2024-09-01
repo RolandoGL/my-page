@@ -1,0 +1,39 @@
+.header-container{
+  background-color: light-dark(var(--color-1), var(--color-1-dark));
+  color: var(--color-3);
+  padding: 20px 10px 0 10px;
+  position: relative;
+}
+
+i{
+  position: relative;
+  left: -45%;
+  font-size: 1.7rem;
+  cursor: pointer;
+  z-index: 10;
+  z-index: 10001;
+
+}
+li{
+  padding: 3px 8px;
+}
+.active{
+  background-color: light-dark(var(--color-2), var(--color-1));
+  color: var(--color-6);
+
+  border-radius: 5px;
+  transition: all ease 200ms;
+}
+
+@media screen  and ( min-width: 768px) {
+  .header-container{
+    font-size: 1.5rem;
+  }
+  p{
+    width: 80%;
+    margin: auto;
+  }
+  i{
+    left: -48%;
+  }
+}

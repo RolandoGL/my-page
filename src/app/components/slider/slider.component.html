@@ -1,0 +1,8 @@
+<div class="slider d-flex flex-column">
+  <figure>
+    <img class="animate__animated animate__fadeInLeft" #image [src]="imagesArry[imagesArry.length-1]" alt="" >
+  </figure>
+  <ul class="list">
+    <li *ngFor="let item of imagesArry; let i = index" [ngClass]="{'active': i == activeIndex }"></li>
+  </ul>
+</div>

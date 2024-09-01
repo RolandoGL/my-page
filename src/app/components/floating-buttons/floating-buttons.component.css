@@ -1,0 +1,48 @@
+.buttons-container{
+  width: max-content;
+  height: max-content;
+  gap: 10px;
+  position: fixed;
+  right: 10px;
+  top: 50%;
+  bottom: 50%;
+  z-index: 1000;
+
+}
+
+.btn{
+  background-color: light-dark(var(--color-1), var(--color-4));
+  border-radius: 50%;
+  border: none;
+  color: var(--color-3);
+  width:  40px;
+  height: 40px;
+  text-wrap: wrap;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  position: relative;
+  right: 0;
+  transition: all ease 200ms;
+}
+
+.icon{
+  font-size: 1.3rem;
+}
+.btn>span{
+  display: none;
+}
+
+.btn:hover{
+  border-radius: 10px;
+  width: 100px !important;
+  color: var(--color-7);
+  background-color: var(--color-3);
+}
+
+.btn:hover>span{
+  display: inline;
+}
+

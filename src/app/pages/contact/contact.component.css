@@ -1,0 +1,27 @@
+.list{
+  flex: 1;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  color: light-dark(var(--color-7), var(--color-6));
+}
+i{
+  padding: 5px;
+  font-size: 1.4rem;
+}
+
+a{
+  text-decoration: none;
+  color: light-dark(var(--color-2), var(--color-8));
+}
+@media screen  and ( min-width: 768px) {
+  .list{
+    width: 420px;
+    margin: 50px auto;
+    background-color: light-dark( #eae9e9, var(--color-1-dark));
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 1.3rem;
+  }
+}

@@ -1,0 +1,48 @@
+.project-container{
+  width: 100%;
+  gap: 10px;
+}
+.card{
+  width: 100%;
+  background-color: light-dark( #ffffff, var(--color-1));
+  padding: 4px;
+  border-radius: 5px;
+}
+.card-header{
+  font-weight: 800;
+  text-align: center;
+  color: light-dark(var(--color-2), var(--color-3));
+
+}
+
+dt, a{
+  padding: 2px;
+  color: light-dark(var(--color-7), var(--color-6));
+  font-weight: 600;
+  text-decoration: underline;
+}
+dd{
+  color: light-dark(var(--color-2), var(--color-8));
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.more{
+  text-align: center;
+}
+
+
+@media screen  and ( min-width: 768px) {
+  .project-container{
+    background-color: light-dark( #eae9e9, var(--color-1-dark));
+    width: 83%;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    font-size: 1.3rem;
+    gap: 20px;
+  }
+  .card{
+    padding: 10px;
+  }
+}
